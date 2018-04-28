@@ -1,0 +1,17 @@
+name: Blog
+type: theme
+description: This is a blog sub theme of Classy
+core: 8.x
+base theme: classy
+libraries:
+  - blog/fonts
+  - blog/global_styles
+regions:
+  branding: Branding
+  header: Header
+  pre_content: 'Pre content'
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  post_content: 'Post content'
+  footer: Footer

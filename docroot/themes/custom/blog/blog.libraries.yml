@@ -1,0 +1,17 @@
+fonts:
+  version: VERSION
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Raleway:400,600': {type: external} # external font
+      '//fonts.googleapis.com/css?family=Roboto': {type: external} # external font
+global_styles:
+  version: VERSION
+  css:
+    theme:
+      css/style.css: {}
+navigation:
+  version: version
+  js:
+    js/modules/navigation.js: {}
+  dependencies:
+    - core/drupal  

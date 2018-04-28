@@ -1,0 +1,40 @@
+// Base HTML Elements.
+html,
+body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: $body_font;
+  font-size: 1em;
+  line-height: 165%;
+  background: $pale-gray;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include bolder($heading_font, 600);
+
+  color: $heading;
+  margin: 0;
+}
+
+.page--wrapper a,
+.page--wrapper a:link,
+.page--wrapper a:visited {
+  padding-bottom: 1px;
+  border-bottom: 2px solid;
+  text-decoration: none;
+  color: $link;
+  transition: padding-bottom .3s ease;
+
+  &:hover {
+    padding-bottom: 4px;
+  }
+}

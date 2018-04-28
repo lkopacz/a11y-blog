@@ -1,0 +1,19 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path scss sass/styles.scss css/style.css",
+    "post-build": "postcss --use autoprefixer -o css/style.css css/*.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.3.0",
+    "breakpoint-sass": "^2.7.1",
+    "node-sass": "^4.8.3",
+    "postcss": "^6.0.21",
+    "postcss-cli": "^5.0.0"
+  }
+}
