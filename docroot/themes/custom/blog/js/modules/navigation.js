@@ -8,6 +8,7 @@
 
   Drupal.behaviors.navigation = {
     attach: (context, settings) => {
+
       function NAVIGATION(mainNavClass, hamburgerToggleClass, headerClass) {
         this.mainNavClass = mainNavClass;
         this.hamburgerToggleClass = hamburgerToggleClass;
