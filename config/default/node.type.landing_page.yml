@@ -1,0 +1,23 @@
+uuid: 3114159c-176a-489e-9dbf-57f2bb46245b
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_workflow
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  lightning_workflow:
+    workflow: editorial
+_core:
+  default_config_hash: g5e93GfacPfjMkLUPHDkofimEdsSgUqQEXsLhKWEmvQ
+name: 'Landing page'
+type: landing_page
+description: 'A special page with its own one-off layout and content.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

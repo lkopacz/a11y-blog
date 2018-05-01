@@ -1,0 +1,28 @@
+uuid: a62915e0-7f5c-4948-9154-e1c9aa18a4bd
+langcode: en
+status: true
+dependencies: {  }
+id: blog_post_creator
+label: 'Blog Post creator'
+weight: 7
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'access image_browser entity browser pages'
+  - 'access in-place editing'
+  - 'access media_browser entity browser pages'
+  - 'access panels in-place editing'
+  - 'access toolbar'
+  - 'administer panelizer node blog_post content'
+  - 'administer panelizer node blog_post layout'
+  - 'change layouts in place editing'
+  - 'create blog_post content'
+  - 'create url aliases'
+  - 'edit own blog_post content'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition review'
+  - 'use text format rich_text'
+  - 'view any unpublished content'
+  - 'view blog_post revisions'
+  - 'view latest version'
+  - 'view own unpublished content'

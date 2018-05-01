@@ -1,0 +1,25 @@
+uuid: d33d2832-1150-46f6-844b-b2b24ef1495a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7daf0c2a-46ee-4bd7-838d-ad631868c2ff'
+  module:
+    - block_content
+  theme:
+    - blog
+id: aboutlindsey
+theme: blog
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'block_content:7daf0c2a-46ee-4bd7-838d-ad631868c2ff'
+settings:
+  id: 'block_content:7daf0c2a-46ee-4bd7-838d-ad631868c2ff'
+  label: 'About Lindsey'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

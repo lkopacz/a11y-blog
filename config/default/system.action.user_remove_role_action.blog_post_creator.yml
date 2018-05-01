@@ -1,0 +1,14 @@
+uuid: 8f5e4cb1-61e9-46ef-936b-6c9f0c6dfd16
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.blog_post_creator
+  module:
+    - user
+id: user_remove_role_action.blog_post_creator
+label: 'Remove the Blog Post creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: blog_post_creator

@@ -1,0 +1,12 @@
+uuid: 47e4a4f8-40ef-41ee-bb7a-10be18e7e0e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: IvohHEiv_tHXtdBNMu7elD10mqN5cVonX-h3Z4vCpZs
+id: media.embedded
+label: Embedded
+targetEntityType: media
+cache: true

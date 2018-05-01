@@ -1,0 +1,14 @@
+uuid: e7e4e6de-6da0-49fa-9881-0ffebb7970f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.blog_post_creator
+  module:
+    - user
+id: user_add_role_action.blog_post_creator
+label: 'Add the Blog Post creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: blog_post_creator

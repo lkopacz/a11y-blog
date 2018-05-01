@@ -1,0 +1,14 @@
+uuid: 72e65050-911e-410f-bb43-ed04482fd31e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.blog_post_reviewer
+  module:
+    - user
+id: user_add_role_action.blog_post_reviewer
+label: 'Add the Blog Post reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: blog_post_reviewer
