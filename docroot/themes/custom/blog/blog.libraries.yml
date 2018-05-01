@@ -3,7 +3,7 @@ fonts:
   css:
     theme:
       '//fonts.googleapis.com/css?family=Raleway:400,600': {type: external} # external font
-      '//fonts.googleapis.com/css?family=Roboto': {type: external} # external font
+      '//fonts.googleapis.com/css?family=Roboto:400,500': {type: external} # external font
 global_styles:
   version: VERSION
   css:
@@ -14,4 +14,4 @@ navigation:
   js:
     js/modules/navigation.js: {}
   dependencies:
-    - core/drupal  
+    - core/drupal

@@ -11,21 +11,9 @@
 //////////////////////////////////
 .body-sidebars-first {
   @include breakpoint($up-sm) {
-    // aside.sidebar-first {
-    //   @include span(3 of 12);
-    //
-    //   > * {
-    //     padding-left: 15px;
-    //   }
-    // }
-    //
-    // section#content {
-    //   @include span(9 of 12 last);
-    //
-    //   > * {
-    //     padding-right: 25px;
-    //   }
-    // }
+    aside.sidebar-first {
+      padding-right: 25px;
+    }
     .main {
       display: grid;
       grid-template-columns: 25% 75%;
@@ -37,24 +25,13 @@
 //////////////////////////////////
 .body-sidebars-second {
   @include breakpoint($up-sm) {
-    // aside.sidebar-second {
-    //   @include span(3 of 12 last);
-    //
-    //   > * {
-    //     padding-right: 15px;
-    //   }
-    // }
-    //
-    // section#content {
-    //   @include span(9 of 12);
-    //
-    //   > * {
-    //     padding-left: 25px;
-    //   }
-    // }
     .main {
       display: grid;
       grid-template-columns: 75% 25%;
+    }
+
+    aside.sidebar-second {
+      padding-left: 25px;
     }
   }
 }

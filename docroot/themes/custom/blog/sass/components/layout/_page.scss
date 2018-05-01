@@ -6,6 +6,7 @@ header#branding,
 .pre-content,
 .main {
   margin: 0 auto;
+  padding: 0 20px;
 
   @include breakpoint($up-sm) {
     max-width: 768px;
