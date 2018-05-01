@@ -54,8 +54,8 @@
   }
 }
 
-ul.menu a,
-ul.menu a.is-active {
+.page--wrapper ul.menu a,
+.page--wrapper ul.menu a.is-active {
   display: block;
   color: $pale-blue;
   text-transform: uppercase;
@@ -68,8 +68,4 @@ ul.menu a.is-active {
   &:hover {
     padding: 1rem;
   }
-}
-
-header#branding {
-    position: relative;
 }

@@ -1,3 +1,22 @@
 .page--wrapper {
   position: relative;
 }
+
+header#branding,
+.pre-content,
+.main {
+  margin: 0 auto;
+
+  @include breakpoint($up-sm) {
+    max-width: 768px;
+  }
+
+  @include breakpoint($large) {
+    max-width: 1024px;
+  }
+}
+
+header#branding {
+  position: relative;
+  height: 5rem;
+}
