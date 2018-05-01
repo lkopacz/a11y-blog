@@ -21,8 +21,10 @@
         this.lastNavLink = this.mainNavLinks[this.mainNavLinks.length - 1];
 
         this.toggleMenu = function () {
+
           this.header.classList.toggle('open');
           this.hamburgerToggle.classList.toggle('open');
+
           for (let link of this.mainNavLinks) {
             link.tabIndex = 0;
           }
@@ -30,6 +32,7 @@
 
         this.exitMenu = function (e) {
           if (e.type === 'blur' || e.keyCode === 27) {
+
             this.header.classList.remove('open');
             this.hamburgerToggle.classList.remove('open');
 
