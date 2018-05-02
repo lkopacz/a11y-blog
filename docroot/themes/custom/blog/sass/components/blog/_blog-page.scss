@@ -1,3 +1,19 @@
 .field--name-field-date {
   font-weight: 500;
 }
+
+.field--name-field-category {
+  .field__item {
+    display: inline;
+
+    &::after {
+      content: ',';
+      padding-left: 1px;
+      padding-right: 3px;
+    }
+
+    &:last-child::after {
+        content: '';
+    }
+  }
+}

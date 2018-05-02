@@ -38,3 +38,26 @@ h6 {
     padding-bottom: 4px;
   }
 }
+
+.page--wrapper {
+  a.button,
+  a.button:link,
+  a.button:visited,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    background: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 500;
+    border: 2px solid $link;
+    transition: all 0.3s linear;
+    color: $link;
+
+    &:hover {
+      padding: 5px;
+      color: $pale-gray;
+      background: $link;
+    }
+  }
+}
