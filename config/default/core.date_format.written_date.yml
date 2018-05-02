@@ -1,0 +1,8 @@
+uuid: 2a4d6a7c-e1a0-4586-9343-cbe3f2125085
+langcode: en
+status: true
+dependencies: {  }
+id: written_date
+label: 'Written Date'
+locked: false
+pattern: 'F j, Y'

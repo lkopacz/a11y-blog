@@ -42,8 +42,8 @@ content:
     weight: 1
     label: hidden
     settings:
-      format_type: medium
-      timezone_override: ''
+      timezone_override: America/New_York
+      format_type: written_date
     third_party_settings: {  }
     type: datetime_default
     region: content
