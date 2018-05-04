@@ -54,18 +54,46 @@
   }
 }
 
-.page--wrapper ul.menu a,
-.page--wrapper ul.menu a.is-active {
-  display: block;
-  color: $pale-blue;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: bold;
-  font-size: 1.25rem;
-  padding: 1rem;
-  border: none;
+.menu--main {
+  margin-top: 5rem;
+}
 
-  &:hover {
+.page--wrapper {
+  .menu-item {
+    margin: 2.5rem 0;
+  }
+
+  ul.menu a,
+  ul.menu a.is-active {
+    position: relative;
+    color: $pale-blue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 1.25rem;
     padding: 1rem;
+    border: none;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $dark-gray;
+      padding: 1rem;
+
+      &::before {
+        width: 100%;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      width: 0%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background: $pale-blue;
+      transition: width 0.3s;
+    }
   }
 }
