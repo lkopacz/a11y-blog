@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.card
+    - core.entity_view_mode.node.teaser
     - field.storage.node.body
     - field.storage.node.field_date
     - field.storage.node.field_image
@@ -74,12 +76,10 @@ display:
       style:
         type: default
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
+          relationship: none
+          view_mode: card
       fields:
         field_image:
           id: field_image
@@ -509,6 +509,37 @@ display:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_date'
         - 'config:field.storage.node.field_image'
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Block
+    position: 2
+    display_options:
+      display_extenders: {  }
+      pager:
+        type: some
+        options:
+          items_per_page: 3
+          offset: 0
+      defaults:
+        pager: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+      use_more: true
+      use_more_always: true
+      use_more_text: 'See All Blog Posts'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_date'
+        - 'config:field.storage.node.field_image'
   page_1:
     display_plugin: page
     id: page_1
@@ -517,6 +548,17 @@ display:
     display_options:
       display_extenders: {  }
       path: blog
+      style:
+        type: default
+        options: {  }
+      defaults:
+        style: false
+        row: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
     cache_metadata:
       max-age: -1
       contexts:

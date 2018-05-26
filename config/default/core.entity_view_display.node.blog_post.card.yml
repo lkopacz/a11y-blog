@@ -1,16 +1,15 @@
-uuid: 662d44a9-c26d-4264-84af-2ae1d845fd04
+uuid: 23374755-ee44-4d78-a4a2-aa0061644f0f
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.card
     - field.field.node.blog_post.body
     - field.field.node.blog_post.field_category
     - field.field.node.blog_post.field_date
     - field.field.node.blog_post.field_image
     - node.type.blog_post
   module:
-    - datetime
     - image
     - panelizer
     - text
@@ -21,42 +20,34 @@ third_party_settings:
     custom: false
     allow: false
     default: default
-id: node.blog_post.teaser
+id: node.blog_post.card
 targetEntityType: node
 bundle: blog_post
-mode: teaser
+mode: card
 content:
   body:
     label: hidden
-    type: text_summary_or_trimmed
-    weight: 2
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
-  field_date:
-    type: datetime_default
+    type: text_trimmed
     weight: 1
-    region: content
-    label: hidden
     settings:
-      timezone_override: ''
-      format_type: written_date
+      trim_length: 60
     third_party_settings: {  }
-  field_image:
-    type: image
-    weight: 0
     region: content
+  field_image:
+    weight: 0
     label: hidden
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
+    type: image
+    region: content
   links:
-    weight: 3
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   field_category: true
+  field_date: true
   scheduled_publication: true

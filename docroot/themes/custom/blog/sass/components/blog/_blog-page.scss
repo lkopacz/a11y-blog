@@ -2,6 +2,23 @@
   font-weight: 500;
 }
 
+.field--name-field-date {
+  position: relative;
+  display: inline-block;
+  font-family: 'Alegreya', serif;
+  color: $vermillion;
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 500;
+
+  &::after {
+    content: "\2014";
+    position: absolute;
+    top: 0;
+    right: -19px;
+  }
+}
+
 .field--name-field-category {
   .field__item {
     display: inline;

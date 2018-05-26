@@ -11,12 +11,17 @@
 //////////////////////////////////
 .body-sidebars-first {
   @include breakpoint($up-sm) {
-    aside.sidebar-first {
-      padding-right: 25px;
-    }
     .main {
       display: grid;
       grid-template-columns: 25% 75%;
+    }
+
+    aside.sidebar-first {
+      padding-right: 25px;
+    }
+
+    section#content {
+      padding-left: 25px;
     }
   }
 }
@@ -30,6 +35,10 @@
       grid-template-columns: 75% 25%;
     }
 
+    section#content {
+      padding-right: 25px;
+    }
+
     aside.sidebar-second {
       padding-left: 25px;
     }
@@ -38,46 +47,23 @@
 //////////////////////////////////
 // Sidebar Both //////////////////
 //////////////////////////////////
-// .body-sidebars-both {
-//   @include breakpoint($up-sm) {
-//     aside.sidebar-first {
-//       @include span(2 of 12);
-//
-//       > * {
-//         padding-left: 15px;
-//       }
-//     }
-//
-//     aside.sidebar-second {
-//       @include span(2 of 12 last);
-//
-//       > * {
-//         padding-right: 15px;
-//       }
-//     }
-//
-//     section#content {
-//       @include span(8 of 12);
-//
-//       > * {
-//         padding-right: 25px;
-//       }
-//     }
-//   }
-// }
-//////////////////////////////////
-// Sidebar None //////////////////
-//////////////////////////////////
-// .body-sidebars-none {
-//   section#content {
-//     @include span(12 of 12);
-//
-//     > * {
-//       padding-left: 15px;
-//       padding-right: 15px;
-//     }
-//   }
-// }
+.body-sidebars-both {
+  @include breakpoint($up-sm) {
+    .main {
+      display: grid;
+      grid-template-columns: 20% 60% 20%;
+    }
+
+    aside.sidebar-first {
+      padding-right: 25px;
+    }
+
+    aside.sidebar-second {
+      padding-left: 25px;
+    }
+  }
+}
+
 //////////////////////////////////
 // General Sidebar Rules /////////
 //////////////////////////////////
