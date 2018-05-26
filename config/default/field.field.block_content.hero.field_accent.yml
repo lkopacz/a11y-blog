@@ -1,0 +1,21 @@
+uuid: ee1dd40a-4494-41cb-9b36-4ee4c7c83b44
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.field_accent
+  module:
+    - options
+id: block_content.hero.field_accent
+field_name: field_accent
+entity_type: block_content
+bundle: hero
+label: Accent
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

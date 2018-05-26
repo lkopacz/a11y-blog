@@ -1,0 +1,23 @@
+uuid: 8ec630d6-6c83-4689-a6d2-59c914767746
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.field_call_to_action
+  module:
+    - link
+id: block_content.hero.field_call_to_action
+field_name: field_call_to_action
+entity_type: block_content
+bundle: hero
+label: 'Call to Action'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

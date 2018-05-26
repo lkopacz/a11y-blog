@@ -1,18 +1,20 @@
 // colors
 $dark-gray: #3c3c3c;
-$dark-periwinkle: #597897;
-$dusty-rose: #c44745;
-$pale-blue: #b2c1d2;
-$pale-gray: #f7f7f7;
+$white: #fff;
+$off-white: #F3E9EA;
+$maroon: #640D23;
+$navy: #1E3650;
+$vermillion: #D73C13; 
+$teal: #25768F;
 
 // Utility colors
-$heading: $dark-periwinkle;
-$link: $dusty-rose;
+$heading: $navy;
+$link: $teal;
 
 // Fonts
-$raleway: 'Raleway', sans-serif;
+$alegreya: 'Alegreya', serif;
 $roboto: 'Roboto', sans-serif;
-$heading_font: $raleway;
+$heading_font: $alegreya;
 $body_font: $roboto;
 
 $semiBold: 600;

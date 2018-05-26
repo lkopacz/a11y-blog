@@ -10,7 +10,7 @@ body {
   font-family: $body_font;
   font-size: 1em;
   line-height: 165%;
-  background: $pale-gray;
+  background: $off-white;
 }
 
 h1,
@@ -48,16 +48,16 @@ h6 {
   input[type="submit"] {
     background: transparent;
     border-radius: 5px;
-    padding: 5px;
+    border: none;
+    padding: 7px;
     font-weight: 500;
-    border: 2px solid $link;
     transition: all 0.3s linear;
-    color: $link;
+    color: $white;
+    background: $vermillion;
 
     &:hover {
-      padding: 5px;
-      color: $pale-gray;
-      background: $link;
+      padding: 7px;
+      background: $maroon;
     }
   }
 }
