@@ -6,6 +6,7 @@ dependencies:
     - block_content.type.hero
     - field.field.block_content.hero.body
     - field.field.block_content.hero.field_accent
+    - field.field.block_content.hero.field_alignment
     - field.field.block_content.hero.field_call_to_action
   module:
     - link
@@ -25,14 +26,21 @@ content:
     region: content
   field_accent:
     weight: 2
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    type: list_key
+    region: content
+  field_alignment:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
     region: content
   field_call_to_action:
     weight: 1
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false

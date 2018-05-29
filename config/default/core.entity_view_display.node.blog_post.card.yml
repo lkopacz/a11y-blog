@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.blog_post.field_image
     - node.type.blog_post
   module:
+    - datetime
     - image
     - panelizer
     - text
@@ -28,11 +29,20 @@ content:
   body:
     label: hidden
     type: text_trimmed
-    weight: 1
+    weight: 2
     settings:
-      trim_length: 60
+      trim_length: 100
     third_party_settings: {  }
     region: content
+  field_date:
+    type: datetime_default
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: written_date
+    third_party_settings: {  }
   field_image:
     weight: 0
     label: hidden
@@ -43,11 +53,10 @@ content:
     type: image
     region: content
   links:
-    weight: 2
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   field_category: true
-  field_date: true
   scheduled_publication: true
