@@ -18,3 +18,7 @@ header#branding {
 .main {
   margin-bottom: 5rem;
 }
+
+.block-page-title-block {
+  @include layout();
+}

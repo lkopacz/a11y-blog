@@ -10,7 +10,7 @@ body {
   font-family: $body_font;
   font-size: 1em;
   line-height: 165%;
-  background: rgba($gold, 0.25);
+  background: $off-white;
 }
 
 h1,
@@ -52,4 +52,49 @@ h6 {
 
 img {
   width: 100%;
+}
+
+blockquote {
+  position: relative;
+  margin: 3rem auto;
+  border-left: 8px solid $teal-medium;
+  padding: 3rem 3rem 3rem 5rem;
+  width: 60%;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6;
+  background: $navy;
+  color: $off-white;
+
+  &::before {
+    position: absolute;
+    content: '\201C';
+    font-family: Arial;
+    top: 5px;
+    left: 33px;
+    font-size: 4em;
+    color: $gold;
+  }
+}
+
+.form-item {
+  position: relative;
+  margin: 1.5rem 0;
+}
+
+label {
+  position: absolute;
+  font-weight: 500;
+  transition: all 0.3s;
+
+  &.focus {
+    font-size: 0.8rem;
+    top: -20px;
+  }
+}
+
+input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid;
 }

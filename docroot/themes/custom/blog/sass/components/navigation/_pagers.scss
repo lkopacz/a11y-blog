@@ -1,0 +1,25 @@
+.page--wrapper {
+    .pager__item {
+        a {
+            border: 1px solid $navy;
+            padding: 7px 12px;
+            border-radius: 19px;
+
+            &:hover {
+                padding-bottom: 7px;
+            }
+        }
+
+        &.is-active a {
+            background: $gold;
+            border-color: $gold;
+        }
+
+        &.pager__item--first a,
+        &.pager__item--previous a,
+        &.pager__item--next a,
+        &.pager__item--last a {
+            border: none;
+        }
+    }
+}

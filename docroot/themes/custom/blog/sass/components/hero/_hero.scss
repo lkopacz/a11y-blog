@@ -13,7 +13,7 @@
         }
 
         .field--name-field-call-to-action a {
-            @include button($black, $gold, $black, $orange);
+            @include button($black, $gold);
         }
     }
 
@@ -26,7 +26,7 @@
         }
 
         .field--name-field-call-to-action a {
-            @include button($white, $navy, $black, $teal-light);
+            @include button($white, $navy);
         }
     }
 
@@ -52,5 +52,11 @@
         @include breakpoint($medium) {
             width: 50%;
         }
+    }
+
+    .field--name-field-call-to-action a {
+        @include enlarge();
+
+        margin-left: 7px;
     }
 }

@@ -1,0 +1,45 @@
+.view-id-blog.view-display-id-page_1 {
+  @include layout();
+}
+
+.block-views-blockblog-block-homepage {
+  @include layout();
+}
+
+.view-id-blog {
+  .view-content {
+      @include breakpoint($large) {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+      }
+  }
+
+  .views-row {
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: $off-white;
+      box-shadow: 0 0 3.5rem rgba($black,.11);
+
+      @include breakpoint($small) {
+          width: 50%;
+      }
+
+      @include breakpoint($medium) {
+          width: 35%;
+      }
+
+      @include breakpoint($large) {
+          width: 27%;
+      }
+  }
+
+  .more-link {
+      text-align: center;
+
+      a {
+          @include button($white, $teal-medium);
+          @include enlarge();
+      }
+  }
+}

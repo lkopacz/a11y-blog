@@ -10,9 +10,20 @@ global_styles:
   css:
     theme:
       css/style.css: {}
+fontawesome:
+  version: 4.7.0
+  css:
+    component:
+      '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css': {type: external}
 navigation:
   version: version
   js:
     js/modules/navigation.js: {}
+  dependencies:
+    - core/drupal
+contact:
+  version: version
+  js:
+    js/modules/form.js: {}
   dependencies:
     - core/drupal

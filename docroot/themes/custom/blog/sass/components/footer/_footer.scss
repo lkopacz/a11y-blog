@@ -1,0 +1,43 @@
+.page--wrapper {
+    footer {
+        height: 20rem;
+        background: $navy;
+
+        ul.menu {
+            justify-content: center;
+        }
+
+        ul.menu a,
+        ul.menu a.is-active {
+            color: $off-white;
+
+            &:hover {
+                color: rgba($off-white, 0.6);
+            }
+        }
+    }
+    .field--name-field-social-media-links {
+        display: flex;
+        justify-content: center;
+
+        .field__item {
+            padding: 0 1rem;
+        }
+
+        a {
+            color: $off-white;
+            border: none;
+            font-size: 1.75rem;
+
+            &:hover {
+                color: rgba($off-white, 0.6);
+            }
+        }
+    }
+}
+
+footer {
+    .menu--main {
+        padding-top: 4rem;
+    }
+}

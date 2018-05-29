@@ -1,3 +1,9 @@
+.page-node-type-blog-post {
+  .cog--mq > #content {
+    @include layout();
+  }
+}
+
 .field--name-field-date {
   font-weight: 500;
 }

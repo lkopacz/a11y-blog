@@ -60,7 +60,7 @@ $large: $screen $large-max + 1;
   padding-right: $number;
 }
 
-@mixin button($color, $background, $hover-color, $hover-bg) {
+@mixin button($color, $background, $hover-color: auto, $hover-bg: auto) {
   border-radius: 5px;
   border: none;
   padding: 7px;
@@ -75,4 +75,13 @@ $large: $screen $large-max + 1;
       background: $hover-bg;
       color: $hover-color;
     }
+}
+
+@mixin enlarge() {
+  display: inline-block;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
