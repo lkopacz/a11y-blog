@@ -1,38 +1,43 @@
 <div {{ attributes.addClass('page--wrapper').setAttribute('id', 'pg__c') }}>
 {{ attach_library('blog/navigation') }}
 
-  <!-- ______________________ BRANDING _______________________ -->
+    <!-- ______________________ BRANDING _______________________ -->
+    <div class="header-wrapper">
+      <div class="cog--mq">
+        <div class="header-wrapper__inner">
+          <header id="branding">
+            {# <div class="cog--mq"> #}
+            {% if page.branding %}
+              <div id="branding-region">
+                {{ page.branding }}
+              </div>
+            {% endif %}
+            {# </div> #}
+          </header>
+          <!-- /branding -->
 
-  <header id="branding">
-    <div class="cog--mq">
-      {% if page.branding %}
-        <div id="branding-region">
-          {{ page.branding }}
-        </div>
-      {% endif %}
+          <!-- ______________________ HEADER _______________________ -->
+          <button id="hamburger-menu-toggle" class="hamburger-menu" aria-haspopup="true">
+            <div class="hamburger-menu__toggle">
+              <span class="hamburger-menu__toggle-line"></span>
+              <span class="hamburger-menu__toggle-line"></span>
+              <span class="hamburger-menu__toggle-line"></span>
+            </div>
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <header id="header" class="header">
+            {# <div class="cog--mq"> #}
+            {% if page.header %}
+              <div id="header-region">
+                {{ page.header }}
+              </div>
+            {% endif %}
+            {# </div> #}
+          </header>
+          <!-- /header -->
+         </div> 
+      </div>
     </div>
-  </header>
-  <!-- /branding -->
-
-  <!-- ______________________ HEADER _______________________ -->
-  <button id="hamburger-menu-toggle" class="hamburger-menu" aria-haspopup="true">
-    <div class="hamburger-menu__toggle">
-      <span class="hamburger-menu__toggle-line"></span>
-      <span class="hamburger-menu__toggle-line"></span>
-      <span class="hamburger-menu__toggle-line"></span>
-    </div>
-    <span class="visually-hidden">Menu</span>
-  </button>
-  <header id="header" class="header">
-    <div class="cog--mq">
-      {% if page.header %}
-        <div id="header-region">
-          {{ page.header }}
-        </div>
-      {% endif %}
-    </div>
-  </header>
-  <!-- /header -->
 
   <!-- ______________________ Pre content _______________________ -->
   {% if page.pre_content %}

@@ -1,14 +1,47 @@
 .block--bundle-hero {
     @include negativeMargin(20px);
 
-    padding: 35px 0;
-    background: $navy;
-    color: $white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+    &--navy {
+        background: $navy;
+        color: $white;
+
+        h2 {
+            color: $gold;
+        }
+
+        .field--name-field-call-to-action a {
+            @include button($black, $gold, $black, $orange);
+        }
+    }
+
+    &--teal {
+        background: $teal-base;
+        color: $off-white;
+
+        h2 {
+            color: $off-white;
+        }
+
+        .field--name-field-call-to-action a {
+            @include button($white, $navy, $black, $teal-light);
+        }
+    }
 
     h2 {
         @include layout();
+    }
 
-        color: $white;
+    @include breakpoint($medium) {
+        &--right {
+            h2,
+            .field--name-body,
+            .field--name-field-call-to-action {
+                margin-left: 50%;
+            }
+        }
     }
 
     &__wrapper {
@@ -16,12 +49,8 @@
     }
 
     .field--name-body {
-        @include breakpoint($up-sm) {
+        @include breakpoint($medium) {
             width: 50%;
         }
-    }
-
-    .field--name-field-call-to-action a {
-        @include button($white, $vermillion, $maroon);
     }
 }

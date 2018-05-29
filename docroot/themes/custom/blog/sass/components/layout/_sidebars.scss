@@ -10,8 +10,8 @@
 // Sidebar First /////////////////
 //////////////////////////////////
 .body-sidebars-first {
-  @include breakpoint($up-sm) {
-    .main {
+  @include breakpoint($medium) {
+    .main > .cog--mq {
       display: grid;
       grid-template-columns: 25% 75%;
     }
@@ -29,8 +29,8 @@
 // Sidebar Second ////////////////
 //////////////////////////////////
 .body-sidebars-second {
-  @include breakpoint($up-sm) {
-    .main {
+  @include breakpoint($medium) {
+    .main > .cog--mq  {
       display: grid;
       grid-template-columns: 75% 25%;
     }
@@ -48,8 +48,8 @@
 // Sidebar Both //////////////////
 //////////////////////////////////
 .body-sidebars-both {
-  @include breakpoint($up-sm) {
-    .main {
+  @include breakpoint($medium) {
+    .main > .cog--mq  {
       display: grid;
       grid-template-columns: 20% 60% 20%;
     }

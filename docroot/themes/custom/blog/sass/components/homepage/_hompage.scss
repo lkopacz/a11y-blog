@@ -4,17 +4,33 @@
 
 .view-id-blog.view-display-id-block_homepage {
     .view-content {
-        @include breakpoint($up-sm) {
+        @include breakpoint($large) {
             display: flex;
             justify-content: space-between;
         }
     }
 
     .views-row {
-        flex-basis: 27%;
+        margin: 2rem auto;
+
+        @include breakpoint($small) {
+            width: 50%;
+        }
+
+        @include breakpoint($medium) {
+            width: 35%;
+        }
+
+        @include breakpoint($large) {
+            width: 27%;
+        }
     }
 
     .more-link {
         text-align: center;
+
+        a {
+            @include button($white, $teal-medium, $black, $teal-light);
+        }
     }
 }

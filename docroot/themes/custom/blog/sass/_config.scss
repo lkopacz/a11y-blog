@@ -1,15 +1,23 @@
 // colors
 $dark-gray: #3c3c3c;
 $white: #fff;
-$off-white: #F3E9EA;
-$maroon: #640D23;
-$navy: #1E3650;
-$vermillion: #D73C13; 
-$teal: #25768F;
+$black: #000;
+// $off-white: #F3E9EA;
+$off-white: #F8F7F5;
+// $maroon: #640D23;
+// $navy: #1E3650;
+$navy: #004657;
+// $vermillion: #D73C13; 
+// $teal: #25768F;
+$teal-base: #188291;
+$teal-medium: #00A2AE;
+$teal-light: #44D1DC;
+$gold: #FED751;
+$orange: #F8A900;
 
 // Utility colors
 $heading: $navy;
-$link: $teal;
+$link: $navy;
 
 // Fonts
 $alegreya: 'Alegreya', serif;
@@ -26,17 +34,17 @@ $semiBold: 600;
 
 // Breakpoints & MQ's ///////////////
 $screen: "only screen" !default;
-$small-max: 767px !default;
-$medium-max: 1023px !default;
-$small: $screen max-width $small-max;
-$up-sm: $screen $small-max + 1;
-$medium: $screen $small-max + 1 $medium-max;
-$large: $screen $medium-max + 1;
+$small-max: 480px !default;
+$medium-max: 767px !default;
+$large-max: 1023px !default;
+$small: $screen $small-max;
+$medium: $screen $medium-max;
+$large: $screen $large-max + 1;
 
 @mixin layout() {
   margin: 0 auto;
   
-    @include breakpoint($up-sm) {
+    @include breakpoint($medium) {
       max-width: 768px;
     }
   
@@ -48,9 +56,11 @@ $large: $screen $medium-max + 1;
 @mixin negativeMargin($number) {
   margin-left: -($number);
   margin-right: -($number);
+  padding-left: $number;
+  padding-right: $number;
 }
 
-@mixin button($color, $background, $hover) {
+@mixin button($color, $background, $hover-color, $hover-bg) {
   border-radius: 5px;
   border: none;
   padding: 7px;
@@ -58,9 +68,11 @@ $large: $screen $medium-max + 1;
   transition: all 0.3s linear;
   color: $color;
   background: $background;
+  font-size: 1.25rem;
 
     &:hover {
       padding: 7px;
-      background: $hover;
+      background: $hover-bg;
+      color: $hover-color;
     }
 }

@@ -1,4 +1,8 @@
 {% extends '@classy/block/block.html.twig' %}
+{% set color_class = 'block--bundle-hero--' ~ content.field_accent.0['#markup']  %}
+{% set align_class = 'block--bundle-hero--' ~ content.field_alignment.0['#markup']  %}
+{% set attributes = attributes.addClass(color_class, align_class) %}
+
 {% block content %}
-    <div class="block--bundle-hero__wrapper">{{ parent() }}</div>
+    <div class="block--bundle-hero__wrapper">{{ content|without('field_accent', 'field_alignment') }}</div>
 {% endblock %}

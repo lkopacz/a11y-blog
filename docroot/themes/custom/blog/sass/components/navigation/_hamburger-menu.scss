@@ -11,12 +11,16 @@
   border: none;
   padding: 0;
 
+  @include breakpoint($medium) {
+    display: none;
+  }
+
   &__toggle-line {
     display: block;
     position: absolute;
     width: 45px;
     height: 6px;
-    background: $maroon;
+    background: $navy;
 
     &:first-child {
       top: 0;
@@ -46,54 +50,114 @@
   height: 100%;
   width: 100%;
   right: -100%;
-  background: $maroon;
+  background: $navy;
   transition: right 0.3s;
 
   &.open {
     right: 0;
+
+    @include breakpoint($medium) {
+      position: relative;
+      padding-top: 0;
+      width: auto;
+      height: auto;
+      right: auto;
+      background: transparent;
+    }
+  }
+
+  @include breakpoint($medium) {
+    position: relative;
+    padding-top: 0;
+    width: auto;
+    height: auto;
+    right: auto;
+    background: transparent;
   }
 }
 
 .menu--main {
   margin-top: 5rem;
+
+  @include breakpoint($medium) {
+    margin-top: 0;
+  }
+}
+
+.header-wrapper__inner {
+  @include breakpoint($medium) {
+    display: flex;
+    justify-content:  space-between;
+    padding-top: 2rem;
+  }
 }
 
 .page--wrapper {
-  .menu-item {
-    margin: 2.5rem 0;
-  }
+  ul.menu {
+    @include breakpoint($medium) {
+      display: flex;
+      justify-content:  flex-end;
+      margin: 0;
+    }
 
-  ul.menu a,
-  ul.menu a.is-active {
-    position: relative;
-    color: $off-white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-size: 1.25rem;
-    padding: 1rem;
-    border: none;
-    transition: all 0.3s;
+    .menu-item {
+      margin: 2.5rem 0;
+  
+      @include breakpoint($medium) {
+        margin: 0 1rem;
 
-    &:hover {
-      color: $maroon;
-      padding: 1rem;
-
-      &::before {
-        width: 100%;
+        &:last-child {
+          margin-right: 0;
+        }
       }
     }
 
-    &::before {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      width: 0%;
-      height: 100%;
-      top: 0;
-      right: 0;
-      background: $off-white;
-      transition: width 0.3s;
+    a,
+    a.is-active {
+      position: relative;
+      color: $off-white;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+      font-size: 1.25rem;
+      padding: 1rem;
+      border: none;
+      transition: all 0.3s;
+
+      @include breakpoint($medium) {
+        text-transform: none;
+        color: $navy;
+      }
+  
+      &:hover {
+        color: $navy;
+        padding: 1rem;
+  
+        &::before {
+          width: 100%;
+        }
+      }
+  
+      &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 0%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background: $off-white;
+        transition: width 0.3s;
+
+        @include breakpoint($medium) {
+          top: auto;
+          right: auto;
+          bottom: 0;
+          left: 0;
+          height: 2px;
+          background: $navy;
+        }
+      }
     }
-  }
+  } 
 }
