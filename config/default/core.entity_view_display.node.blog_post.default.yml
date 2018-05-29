@@ -10,7 +10,6 @@ dependencies:
     - node.type.blog_post
   module:
     - datetime
-    - image
     - panelizer
     - text
     - user
@@ -49,19 +48,11 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_image:
-    weight: 4
-    label: above
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
   links:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_image: true
   scheduled_publication: true

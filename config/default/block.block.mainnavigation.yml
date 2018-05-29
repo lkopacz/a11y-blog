@@ -1,0 +1,24 @@
+uuid: 3533b3cf-9777-4765-878d-8bc6071ccc2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - blog
+id: mainnavigation
+theme: blog
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

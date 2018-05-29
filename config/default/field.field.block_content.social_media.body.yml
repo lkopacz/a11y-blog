@@ -1,0 +1,22 @@
+uuid: 65ce4af5-db8b-44f5-a331-8df369e8c7c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_media
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.social_media.body
+field_name: body
+entity_type: block_content
+bundle: social_media
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary
