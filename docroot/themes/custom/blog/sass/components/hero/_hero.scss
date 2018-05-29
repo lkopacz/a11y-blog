@@ -1,0 +1,27 @@
+.block--bundle-hero {
+    @include negativeMargin(20px);
+
+    padding: 35px 0;
+    background: $navy;
+    color: $white;
+
+    h2 {
+        @include layout();
+
+        color: $white;
+    }
+
+    &__wrapper {
+        @include layout();
+    }
+
+    .field--name-body {
+        @include breakpoint($up-sm) {
+            width: 50%;
+        }
+    }
+
+    .field--name-field-call-to-action a {
+        @include button($white, $vermillion, $maroon);
+    }
+}

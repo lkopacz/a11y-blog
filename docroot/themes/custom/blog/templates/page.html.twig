@@ -4,11 +4,13 @@
   <!-- ______________________ BRANDING _______________________ -->
 
   <header id="branding">
-    {% if page.branding %}
-      <div id="branding-region">
-        {{ page.branding }}
-      </div>
-    {% endif %}
+    <div class="cog--mq">
+      {% if page.branding %}
+        <div id="branding-region">
+          {{ page.branding }}
+        </div>
+      {% endif %}
+    </div>
   </header>
   <!-- /branding -->
 
@@ -22,86 +24,91 @@
     <span class="visually-hidden">Menu</span>
   </button>
   <header id="header" class="header">
-    {% if page.header %}
-      <div id="header-region">
-        {{ page.header }}
-      </div>
-    {% endif %}
+    <div class="cog--mq">
+      {% if page.header %}
+        <div id="header-region">
+          {{ page.header }}
+        </div>
+      {% endif %}
+    </div>
   </header>
   <!-- /header -->
 
   <!-- ______________________ Pre content _______________________ -->
   {% if page.pre_content %}
     <div class="clearfix pre-content" id="pre-content">
-      {{ page.pre_content }}
+      <div class="cog--mq">
+        {{ page.pre_content }}
+      </div>
     </div>
   {% endif %}
 
   <!-- ______________________ MAIN _______________________ -->
 
   <div class="clearfix main" id="main">
+    <div class="cog--mq">
+      {% if page.sidebar_first %}
+        <aside class="sidebar-first sidebars" id="sidebar-first">
+          {{ page.sidebar_first }}
+        </aside>
+      {% endif %}
+      <!-- /sidebar-first -->
 
-    {% if page.sidebar_first %}
-      <aside class="sidebar-first sidebars" id="sidebar-first">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
-    <!-- /sidebar-first -->
+      <section id="content">
 
-    <section id="content">
+        {% if breadcrumb or title or messages or tabs or action_links %}
+          <div id="content-header">
+            {{ breadcrumb }}
+            {% if page.highlighted %}
+              <div id="highlighted">{{ page.highlighted }}</div>
+            {% endif %}
 
-    {% if breadcrumb or title or messages or tabs or action_links %}
-      <div id="content-header">
-        {{ breadcrumb }}
-        {% if page.highlighted %}
-          <div id="highlighted">{{ page.highlighted }}</div>
+            {{ title_prefix }}
+
+            {% if title %}
+              <h1 class="title">{{ title }}</h1>
+            {% endif %}
+
+            {{ title_suffix }}
+            {{ messages }}
+            {{ page.help }}
+
+            {% if tabs %}
+              <div class="tabs">{{ tabs }}</div>
+            {% endif %}
+
+            {% if action_links %}
+              <ul class="action-links">{{ action_links }}</ul>
+            {% endif %}
+
+          </div>
+          <!-- /#content-header -->
         {% endif %}
 
-        {{ title_prefix }}
+        <div id="content-area">
+          {{ page.content }}
+        </div>
 
-        {% if title %}
-          <h1 class="title">{{ title }}</h1>
-        {% endif %}
+      </section>
+      <!-- /content-inner /content -->
 
-        {{ title_suffix }}
-        {{ messages }}
-        {{ page.help }}
-
-        {% if tabs %}
-          <div class="tabs">{{ tabs }}</div>
-        {% endif %}
-
-        {% if action_links %}
-          <ul class="action-links">{{ action_links }}</ul>
-        {% endif %}
-
-      </div>
-      <!-- /#content-header -->
-    {% endif %}
-
-    <div id="content-area">
-      {{ page.content }}
+      {% if page.sidebar_second %}
+        <aside class="sidebar-second sidebars" id="sidebar-second">
+          {{ page.sidebar_second }}
+        </aside>
+      {% endif %}
+      <!-- /sidebar-first -->
     </div>
-
-    {{ feed_icons }}
-
-    </section>
-    <!-- /content-inner /content -->
-
-    {% if page.sidebar_second %}
-      <aside class="sidebar-second sidebars" id="sidebar-second">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
-    <!-- /sidebar-first -->
-  </div>
+  </div>  
   <!-- /main -->
 
   <!-- ______________________ Post content _______________________ -->
 
   {% if page.post_content %}
     <div class="clearfix post-content" id="post-content">
-      {{ page.post_content }}
+      <div class="cog--mq">
+        {{ page.post_content }} 
+      </div>  
     </div>
   {% endif %}
 
@@ -109,7 +116,9 @@
 
   {% if page.footer %}
     <footer id="footer">
-      {{ page.footer }}
+      <div class="cog--mq">
+        {{ page.footer }}
+      </div>
     </footer>
     <!-- /footer -->
   {% endif %}

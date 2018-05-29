@@ -1,0 +1,20 @@
+.block-views-blockblog-block-homepage {
+    @include layout();
+}
+
+.view-id-blog.view-display-id-block_homepage {
+    .view-content {
+        @include breakpoint($up-sm) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .views-row {
+        flex-basis: 27%;
+    }
+
+    .more-link {
+        text-align: center;
+    }
+}

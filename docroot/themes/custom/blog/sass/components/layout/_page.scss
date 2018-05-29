@@ -2,18 +2,11 @@
   position: relative;
 }
 
-header#branding,
-.pre-content,
-.main {
-  margin: 0 auto;
+.cog--mq {
   padding: 0 20px;
 
-  @include breakpoint($up-sm) {
-    max-width: 768px;
-  }
-
-  @include breakpoint($large) {
-    max-width: 1024px;
+  > *:not(#content) {
+    @include layout();
   }
 }
 

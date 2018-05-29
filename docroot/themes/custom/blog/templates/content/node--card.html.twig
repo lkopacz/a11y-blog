@@ -1,0 +1,13 @@
+{% set classes = [
+'node',
+'node--type-' ~ node.bundle|clean_class,
+view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+] %}
+
+<article {{ attributes.addClass(classes) }}>
+    {{ content.field_image }}
+    {{ content.field_date }}
+    <h2 class="node--type-blog-post__content-title">{{ label }}</h2>
+    {{ content.body }}
+</article>
+<a class="node-readmore" href="{{ url }}">Read more <span class="visually-hidden">about {{ label }}</span></a>

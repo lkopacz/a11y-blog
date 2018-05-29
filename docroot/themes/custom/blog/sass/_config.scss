@@ -32,3 +32,35 @@ $small: $screen max-width $small-max;
 $up-sm: $screen $small-max + 1;
 $medium: $screen $small-max + 1 $medium-max;
 $large: $screen $medium-max + 1;
+
+@mixin layout() {
+  margin: 0 auto;
+  
+    @include breakpoint($up-sm) {
+      max-width: 768px;
+    }
+  
+    @include breakpoint($large) {
+      max-width: 1024px;
+    }
+}
+
+@mixin negativeMargin($number) {
+  margin-left: -($number);
+  margin-right: -($number);
+}
+
+@mixin button($color, $background, $hover) {
+  border-radius: 5px;
+  border: none;
+  padding: 7px;
+  font-weight: 500;
+  transition: all 0.3s linear;
+  color: $color;
+  background: $background;
+
+    &:hover {
+      padding: 7px;
+      background: $hover;
+    }
+}
