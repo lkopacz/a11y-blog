@@ -1,7 +1,11 @@
 .page--wrapper {
     footer {
-        height: 20rem;
         background: $navy;
+        height: 30rem;
+
+        @include breakpoint($medium) {
+            height: 20rem;
+        }
 
         ul.menu {
             justify-content: center;
@@ -19,6 +23,7 @@
     .field--name-field-social-media-links {
         display: flex;
         justify-content: center;
+        margin: 2rem;
 
         .field__item {
             padding: 0 1rem;

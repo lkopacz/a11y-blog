@@ -4,6 +4,12 @@
 
 .block-views-blockblog-block-homepage {
   @include layout();
+
+  margin: 3rem auto 0;
+
+  > h2 {
+    text-align: center;
+  }
 }
 
 .view-id-blog {
