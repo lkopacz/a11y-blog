@@ -1,3 +1,11 @@
+.header-wrapper {
+  background: $navy;
+
+  @include breakpoint($medium) {
+    border-top: 15px solid $teal;
+  }
+}
+
 .hamburger-menu {
   display: block;
   position: absolute;
@@ -38,7 +46,7 @@
   }
 
   &.open .hamburger-menu__toggle-line {
-    background: $orange;
+    background: $off-white;
   }
 }
 
@@ -58,6 +66,7 @@
 
     @include breakpoint($medium) {
       position: relative;
+      align-self: flex-end;
       padding-top: 0;
       width: auto;
       height: auto;
@@ -68,6 +77,7 @@
 
   @include breakpoint($medium) {
     position: relative;
+    align-self: flex-end;
     padding-top: 0;
     width: auto;
     height: auto;
@@ -104,7 +114,7 @@
       margin: 2.5rem 0;
   
       @include breakpoint($medium) {
-        margin: 0 1rem;
+        margin: 1rem;
 
         &:last-child {
           margin-right: 0;
@@ -112,10 +122,9 @@
       }
     }
 
-    a,
-    a.is-active {
+    a {
       position: relative;
-      color: $orange;
+      color: $off-white;
       text-transform: uppercase;
       letter-spacing: 2px;
       font-weight: bold;
@@ -124,14 +133,17 @@
       border: none;
       transition: all 0.3s;
 
-      @include breakpoint($medium) {
-        text-transform: none;
-        color: $navy;
+      &.is-active {
+        border-bottom: 7px solid $off-white;
+        padding-bottom: 0.675rem;
       }
   
       &:hover {
         color: $navy;
-        padding: 1rem;
+
+        @include breakpoint($medium) {
+          color: $off-white;
+        }
   
         &::before {
           width: 100%;
@@ -146,16 +158,17 @@
         height: 100%;
         top: 0;
         right: 0;
-        background: $orange;
+        background: $off-white;
         transition: width 0.3s;
 
         @include breakpoint($medium) {
-          top: auto;
-          right: auto;
-          bottom: 0;
-          left: 0;
-          height: 2px;
-          background: $navy;
+          content: none;
+          // top: auto;
+          // right: auto;
+          // bottom: 0;
+          // left: 0;
+          // height: 2px;
+          // background: $navy;
         }
       }
     }

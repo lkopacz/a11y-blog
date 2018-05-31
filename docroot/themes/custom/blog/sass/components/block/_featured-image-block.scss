@@ -1,0 +1,26 @@
+.block--bundle-featured-image-block {
+    @include negativeMargin(20px);
+
+    margin-top: 3rem;
+    border-top: 15px solid $teal;
+    background: $white;
+
+    &__wrapper {
+        padding: 3rem 1rem;
+
+        @include layout();
+
+        @include breakpoint($medium) {
+            display: flex;
+        }
+    }
+
+    &__img {
+        margin-right: 2rem;
+    }
+}
+
+.field--name-field-thumbnail img {
+    border-radius: 60px;
+    border: 6px solid $peach;
+}

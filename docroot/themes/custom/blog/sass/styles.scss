@@ -23,6 +23,7 @@
 @import "base/base";
 
 @import "components/block/contact-block";
+@import "components/block/featured-image-block";
 
 @import "components/blog/blog-page";
 @import "components/blog/blog-teaser";
@@ -34,5 +35,6 @@
 @import "components/layout/page";
 @import "components/layout/sidebars";
 
+@import "components/navigation/breadcrumbs";
 @import "components/navigation/hamburger-menu";
 @import "components/navigation/pagers";

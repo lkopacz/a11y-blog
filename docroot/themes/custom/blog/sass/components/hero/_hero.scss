@@ -3,34 +3,27 @@
 
     padding-top: 80px;
     padding-bottom: 80px;
+    color: $off-white;
     
     &--navy {
         background: $navy;
-        color: $white;
-
-        h2 {
-            color: $gold;
-        }
 
         .field--name-field-call-to-action a {
-            @include button($black, $gold);
+            @include button($white, $vermillion);
         }
     }
 
     &--teal {
-        background: $teal-base;
-        color: $off-white;
-
-        h2 {
-            color: $off-white;
-        }
+        background: rgba($maroon, 0.9);
 
         .field--name-field-call-to-action a {
-            @include button($white, $navy);
+            @include button($white, $teal);
         }
     }
 
     h2 {
+        color: $off-white;
+
         @include layout();
     }
 

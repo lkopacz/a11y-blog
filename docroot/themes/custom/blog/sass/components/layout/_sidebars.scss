@@ -10,6 +10,10 @@
 // Sidebar First /////////////////
 //////////////////////////////////
 .body-sidebars-first {
+  .main {
+    @include layout();
+  }
+
   @include breakpoint($medium) {
     .main > .cog--mq {
       display: grid;
@@ -29,6 +33,9 @@
 // Sidebar Second ////////////////
 //////////////////////////////////
 .body-sidebars-second {
+  .main {
+    @include layout();
+  }
   @include breakpoint($medium) {
     .main > .cog--mq  {
       display: grid;

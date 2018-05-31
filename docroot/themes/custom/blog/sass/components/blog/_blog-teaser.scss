@@ -44,7 +44,7 @@
       text-align: center;
 
       a {
-          @include button($white, $teal-medium);
+          @include button($white, $vermillion);
           @include enlarge();
       }
   }

@@ -1,0 +1,45 @@
+.breadcrumb {
+    margin-top: 1rem;
+
+    li {
+        display: inline-block;
+        position: relative;
+        padding: 0 20px;
+        background: $peach;
+        border: 1px solid $black;
+        border-right: none;
+
+        &:not(:first-child) {
+            margin-left: -5px;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-top: 13px solid transparent;
+            border-bottom: 13px solid transparent;
+            border-left: 13px solid $black;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: -13px;
+            top: 0;
+            z-index: 5;
+            width: 0;
+            height: 0;
+            border-top: 13px solid transparent;
+            border-bottom: 13px solid transparent;
+            border-left: 13px solid $peach;
+        }
+    }
+}
+
+.page--wrapper .breadcrumb a {
+    border: none;
+}

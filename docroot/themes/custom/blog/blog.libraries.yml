@@ -5,6 +5,8 @@ fonts:
       # '//fonts.googleapis.com/css?family=Raleway:400,600': {type: external} # external font
       '//fonts.googleapis.com/css?family=Roboto:400,500': {type: external} # external font
       '//fonts.googleapis.com/css?family=Alegreya:400,500': {type: external} # external font
+      '//fonts.googleapis.com/css?family=PT+Sans|PT+Serif': {type: external} # external font
+
 global_styles:
   version: VERSION
   css:

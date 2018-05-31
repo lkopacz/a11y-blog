@@ -28,14 +28,15 @@ h6 {
 .page--wrapper a,
 .page--wrapper a:link,
 .page--wrapper a:visited {
-  padding-bottom: 1px;
-  border-bottom: 2px solid;
+  padding-bottom: 3px;
+  border-bottom: 3px solid;
   text-decoration: none;
   color: $link;
-  transition: padding-bottom .3s ease;
+  font-weight: bold;
+  transition: padding-bottom 0.3s ease;
 
   &:hover {
-    padding-bottom: 4px;
+    padding-bottom: 5px;
   }
 }
 
@@ -46,25 +47,21 @@ h6 {
   input[type="button"],
   input[type="reset"],
   input[type="submit"] {
-    @include button($white, $teal-base, $black, $teal-light);
+    @include button($white, $vermillion);
   }
-}
-
-img {
-  width: 100%;
 }
 
 blockquote {
   position: relative;
   margin: 3rem auto;
-  border-left: 8px solid $teal-medium;
+  border-left: 8px solid $vermillion;
   padding: 3rem 3rem 3rem 5rem;
   width: 60%;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.6;
-  background: $navy;
-  color: $off-white;
+  background: $peach;
+  color: $navy;
 
   &::before {
     position: absolute;
@@ -73,7 +70,7 @@ blockquote {
     top: 5px;
     left: 33px;
     font-size: 4em;
-    color: $gold;
+    color: $maroon;
   }
 }
 
@@ -116,7 +113,7 @@ input[type="checkbox"] {
       border-radius: 3px;
       width: 20px;
       height: 20px;
-      background: $orange;
+      background: $teal;
     }
   }
 
