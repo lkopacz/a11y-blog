@@ -1,0 +1,8 @@
+uuid: 9fc78cf2-5740-451b-9f99-9e4fa16d32c5
+langcode: en
+status: true
+dependencies: {  }
+id: featured_image_block
+label: 'Featured Image Block'
+revision: 1
+description: ''
