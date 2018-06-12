@@ -36,6 +36,7 @@ module:
   image_widget_crop: 0
   inline_entity_form: 0
   jsonapi: 0
+  kint: 0
   layout_discovery: 0
   lightning_api: 0
   lightning_contact_form: 0

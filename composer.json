@@ -7,7 +7,8 @@
     "require": {
         "acquia/blt": "^9.0.3",
         "drupal/pathauto": "^1.2",
-        "drupal/admin_toolbar": "^1.23"
+        "drupal/admin_toolbar": "^1.23",
+        "drupal/current_page_crumb": "^1.2"
     },
     "require-dev": {
         "geerlingguy/drupal-vm": "^4.8"

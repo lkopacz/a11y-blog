@@ -28,7 +28,7 @@
     position: absolute;
     width: 45px;
     height: 6px;
-    background: $navy;
+    background: $off-white;
 
     &:first-child {
       top: 0;
@@ -43,10 +43,6 @@
     &:last-child {
       top: 2rem;
     }
-  }
-
-  &.open .hamburger-menu__toggle-line {
-    background: $off-white;
   }
 }
 
@@ -134,15 +130,19 @@
       transition: all 0.3s;
 
       &.is-active {
-        border-bottom: 7px solid $off-white;
         padding-bottom: 0.675rem;
       }
   
       &:hover {
         color: $navy;
+        padding-bottom: 1rem;
 
         @include breakpoint($medium) {
           color: $off-white;
+
+          &.is-active {
+            border-bottom: 7px solid $off-white;
+          }
         }
   
         &::before {

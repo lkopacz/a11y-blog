@@ -95,3 +95,4 @@ devel_generate: 0.0.0
 pathauto: 1.2.0
 admin_toolbar: 1.23.0
 admin_toolbar_tools: 0.0.0
+kint: 1.2.0

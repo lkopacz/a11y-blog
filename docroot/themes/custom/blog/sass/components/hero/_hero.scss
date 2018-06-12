@@ -3,26 +3,17 @@
 
     padding-top: 80px;
     padding-bottom: 80px;
-    color: $off-white;
+    color: $navy;
+    background: $peach;
     
-    &--navy {
-        background: $navy;
 
-        .field--name-field-call-to-action a {
-            @include button($white, $vermillion);
-        }
-    }
-
-    &--teal {
-        background: rgba($maroon, 0.9);
-
-        .field--name-field-call-to-action a {
-            @include button($white, $teal);
-        }
+    .field--name-field-call-to-action a {
+        @include button($white, $teal);
+        @include enlarge();
     }
 
     h2 {
-        color: $off-white;
+        color: $navy;
 
         @include layout();
     }
@@ -45,11 +36,5 @@
         @include breakpoint($medium) {
             width: 50%;
         }
-    }
-
-    .field--name-field-call-to-action a {
-        @include enlarge();
-
-        margin-left: 7px;
     }
 }

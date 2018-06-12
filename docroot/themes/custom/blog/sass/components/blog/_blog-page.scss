@@ -5,17 +5,13 @@
 }
 
 .field--name-field-date {
-  font-weight: 500;
-}
-
-.field--name-field-date {
   position: relative;
   display: inline-block;
   font-family: $serif;
-  color: $navy;
-  font-size: 1.125rem;
+  color: $vermillion;
+  font-size: 0.875rem;
   font-style: italic;
-  font-weight: 500;
+  font-weight: bold;
 
   &::after {
     content: "\2014";
