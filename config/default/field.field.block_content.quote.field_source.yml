@@ -1,0 +1,23 @@
+uuid: 6e847c9a-93c0-4151-a781-68f4d294d032
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.quote
+    - field.storage.block_content.field_source
+  module:
+    - link
+id: block_content.quote.field_source
+field_name: field_source
+entity_type: block_content
+bundle: quote
+label: Source
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

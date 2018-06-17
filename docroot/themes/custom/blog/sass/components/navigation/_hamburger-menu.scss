@@ -94,7 +94,7 @@
   @include breakpoint($medium) {
     display: flex;
     justify-content:  space-between;
-    padding-top: 2rem;
+    padding-top: 4rem;
   }
 }
 
@@ -129,8 +129,11 @@
       border: none;
       transition: all 0.3s;
 
-      &.is-active {
-        padding-bottom: 0.675rem;
+      @include breakpoint($medium) {
+        &.is-active {
+          border-bottom: 7px solid $off-white;
+          padding-bottom: 0.675rem;
+        }
       }
   
       &:hover {
@@ -141,7 +144,7 @@
           color: $off-white;
 
           &.is-active {
-            border-bottom: 7px solid $off-white;
+            padding-bottom: 0.675rem;
           }
         }
   

@@ -23,9 +23,15 @@ navigation:
     js/modules/navigation.js: {}
   dependencies:
     - core/drupal
-contact:
+form:
   version: version
   js:
     js/modules/form.js: {}
+  dependencies:
+    - core/drupal
+search:
+  version: version
+  js:
+    js/modules/search.js: {}
   dependencies:
     - core/drupal

@@ -1,7 +1,9 @@
 {% extends '@classy/block/block.html.twig' %}
-{% set align_class = 'block--bundle-hero--' ~ content.field_alignment.0['#markup']  %}
-{% set attributes = attributes.addClass(align_class) %}
-
 {% block content %}
-    <div class="block--bundle-hero__wrapper">{{ content|without('field_accent', 'field_alignment') }}</div>
+    <div class="block--bundle-hero__wrapper">{{ parent() }}</div>
+    {% if is_front %}
+        <div class="block--bundle-hero__down-arrow">
+            <i aria-hidden="true" class="fa fa-angle-down"></i>
+        </div>
+    {% endif %}
 {% endblock %}

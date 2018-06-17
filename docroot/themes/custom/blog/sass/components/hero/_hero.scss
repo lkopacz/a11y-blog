@@ -1,11 +1,12 @@
 .block--bundle-hero {
     @include negativeMargin(20px);
 
-    padding-top: 80px;
-    padding-bottom: 80px;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: calc((100vh - 300px)/2);
+    height: calc(100vh - 159px);
     color: $navy;
     background: $peach;
-    
 
     .field--name-field-call-to-action a {
         @include button($white, $teal);
@@ -13,9 +14,11 @@
     }
 
     h2 {
-        color: $navy;
-
         @include layout();
+
+        margin-bottom: 20px;
+        color: $navy;
+        text-align: center;
     }
 
     @include breakpoint($medium) {
@@ -29,12 +32,27 @@
     }
 
     &__wrapper {
+        text-align: center;
+
         @include layout();
     }
 
     .field--name-body {
+        margin: 0 auto 10px;
+        text-align: center;
+
         @include breakpoint($medium) {
             width: 50%;
         }
+    }
+
+    &__down-arrow {
+        position:  absolute;
+        bottom: 0;
+        left: calc(50% - 50px);
+        width: 100px;
+        height: 100px;
+        font-size: 60px;
+        text-align: center;
     }
 }

@@ -68,7 +68,9 @@ function blog_preprocess_block(&$variables) {
       $variables['attributes']['class'][] = Html::cleanCssIdentifier('block--bundle-' . $bundle_class);
       $variables['attributes']['data-bundle-class'] = $bundle_class;
     }
+    $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
   }
+  // kint($variables);
 }
 
 /**
@@ -139,5 +141,14 @@ function blog_theme_suggestions_block_alter(array &$suggestions, array $variable
   // Block suggestions for custom block bundles.
   if (isset($variables['elements']['content']['#block_content'])) {
     array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
+  }
+}
+
+/**
+ * Implements hook_preprocess_form().
+ */
+function blog_preprocess_form(&$variables) {
+  if ($variables['element']['#form_id'] === 'search_block_form') {
+    $variables['#attached']['library'][] = 'blog/form';
   }
 }

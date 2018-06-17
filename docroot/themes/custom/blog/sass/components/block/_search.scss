@@ -1,0 +1,28 @@
+.search-block-form {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+
+  .form-search {
+    border-color: $white;
+    width: 11rem;
+    transition: width 0.3s;
+
+    &.open {
+      width: 20rem;
+    }
+  }
+
+  .form-submit {
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  .fa-search {
+    position: absolute;
+    font-size: 1.875rem;
+    color: $white;
+    z-index: -1;
+  }
+}

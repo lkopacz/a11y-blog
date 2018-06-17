@@ -1,0 +1,42 @@
+.block--bundle-quote {
+  @include negativeMargin(20px);
+  @include layout();
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-left: 15px solid $vermillion;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  text-align: center;
+
+  > h2 {
+    letter-spacing: 4px;
+    line-height: 1;
+    font-size: 2.5rem;
+    color: $maroon;
+  }
+
+  &__wrapper {
+    color: $maroon;
+  }
+
+  .field--name-field-quote {
+    margin-top: 2rem;
+    font-size: 1.75rem;
+
+    &::before {
+      content: '\201C';
+      font-family: Arial;
+      vertical-align: bottom;
+      font-size: 2em;
+      line-height: 0.25;
+      padding-right: 0.5rem;
+      display: inline;
+    }
+  }
+
+  .field--name-field-source {
+    font-size: 0.75rem;
+  }
+}

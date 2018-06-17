@@ -1,0 +1,6 @@
+{% extends '@classy/block/block--search-form-block.html.twig' %}
+{% block content %}
+  {{ attach_library('blog/search') }}
+  {{ parent() }}
+  <i class="fa fa-search"></i>
+{% endblock %}

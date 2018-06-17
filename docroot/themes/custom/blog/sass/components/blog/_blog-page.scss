@@ -21,6 +21,16 @@
   }
 }
 
+.embedded-entity {
+ &.align-left {
+    padding-right: 2rem;
+  }
+
+  &.align-right {
+    padding-left: 2rem;
+  }
+}
+
 .field--name-field-category {
   .field__item {
     display: inline;

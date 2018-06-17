@@ -9,6 +9,7 @@
       attach: (context, settings) => {
         if (typeof context['location'] !== 'undefined') {
         const inputWrappers = document.querySelectorAll('.form-item');
+        console.log(inputWrappers);
 
         for (let item of inputWrappers) {
             const input = item.querySelector('input');

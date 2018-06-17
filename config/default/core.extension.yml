@@ -14,6 +14,7 @@ module:
   crop: 0
   ctools: 0
   ctools_block: 0
+  current_page_crumb: 0
   datetime: 0
   dblog: 0
   devel: 0

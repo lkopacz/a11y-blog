@@ -1,32 +1,30 @@
-uuid: 671e328e-9603-4173-9615-a57655e83654
+uuid: dbdaae47-3f22-4397-a9cc-3c2e47e0027b
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.hero
-    - field.field.block_content.hero.body
-    - field.field.block_content.hero.field_call_to_action
+    - block_content.type.quote
+    - field.field.block_content.quote.field_quote
+    - field.field.block_content.quote.field_source
   module:
     - content_moderation
     - datetime
     - link
-    - text
-id: block_content.hero.default
+id: block_content.quote.default
 targetEntityType: block_content
-bundle: hero
+bundle: quote
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 2
+  field_quote:
+    weight: 102
     settings:
-      rows: 9
-      summary_rows: 3
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
+    type: string_textarea
     region: content
-  field_call_to_action:
-    weight: 3
+  field_source:
+    weight: 103
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -35,7 +33,7 @@ content:
     region: content
   info:
     type: string_textfield
-    weight: 0
+    weight: -5
     region: content
     settings:
       size: 60
@@ -43,13 +41,13 @@ content:
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
-    weight: 5
+    weight: 100
     settings: {  }
     region: content
     third_party_settings: {  }
   scheduled_publication:
     type: datetime_default
-    weight: 4
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }

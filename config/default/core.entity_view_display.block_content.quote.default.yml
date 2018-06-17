@@ -1,29 +1,28 @@
-uuid: 2616ef35-b379-470b-afdf-62f94179ea9e
+uuid: 1bf8e819-79a9-4f2f-947f-8fe95332c4c0
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.hero
-    - field.field.block_content.hero.body
-    - field.field.block_content.hero.field_call_to_action
+    - block_content.type.quote
+    - field.field.block_content.quote.field_quote
+    - field.field.block_content.quote.field_source
   module:
     - link
-    - text
-id: block_content.hero.default
+id: block_content.quote.default
 targetEntityType: block_content
-bundle: hero
+bundle: quote
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 0
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_call_to_action:
+  field_quote:
     weight: 1
     label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_source:
+    weight: 2
+    label: inline
     settings:
       trim_length: 80
       url_only: false
