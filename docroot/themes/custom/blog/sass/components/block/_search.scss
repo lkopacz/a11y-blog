@@ -1,4 +1,4 @@
-.search-block-form {
+.block-search {
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -15,14 +15,20 @@
 
   .form-submit {
     opacity: 0;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
   }
 
   .fa-search {
     position: absolute;
-    font-size: 1.875rem;
-    color: $white;
+    top: 8px;
+    right: 5px;
     z-index: -1;
+    font-size: 1.5rem;
+    color: $white;
   }
+}
+
+.path-search .block-system-main-block {
+  @include layout();
 }

@@ -143,12 +143,3 @@ function blog_theme_suggestions_block_alter(array &$suggestions, array $variable
     array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
   }
 }
-
-/**
- * Implements hook_preprocess_form().
- */
-function blog_preprocess_form(&$variables) {
-  if ($variables['element']['#form_id'] === 'search_block_form') {
-    $variables['#attached']['library'][] = 'blog/form';
-  }
-}

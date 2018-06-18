@@ -11,6 +11,7 @@
       if (typeof context['location'] !== 'undefined') {
 
         const searchInput = document.getElementById('edit-keys--2');
+
         searchInput.addEventListener('focus', () => {
           searchInput.classList.add('open')
         }, false);

@@ -23,7 +23,7 @@ navigation:
     js/modules/navigation.js: {}
   dependencies:
     - core/drupal
-form:
+inputs:
   version: version
   js:
     js/modules/form.js: {}
