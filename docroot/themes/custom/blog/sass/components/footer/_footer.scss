@@ -21,13 +21,26 @@
             }
         }
     }
+
     .field--name-field-social-media-links {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         margin: 2rem;
+
+        @include breakpoint($medium) {
+            justify-content: center;
+        }
 
         .field__item {
             padding: 0 1rem;
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
         }
 
         a {
