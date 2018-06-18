@@ -10,7 +10,12 @@
     attach: (context, settings) => {
       if (typeof context['location'] !== 'undefined') {
 
-        const searchInput = document.getElementById('edit-keys--2');
+        if (context.body.classList.contains('logged-out')) {
+          var searchInput = document.getElementById('edit-keys');
+        }
+        else {
+          var searchInput = document.getElementById('edit-keys--2');
+        }
 
         searchInput.addEventListener('focus', () => {
           searchInput.classList.add('open')
