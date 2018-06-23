@@ -1,0 +1,9 @@
+mailchimp:
+  css:
+    theme:
+      css/mailchimp.css: {}
+  js:
+    '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js': {type: external}
+    'js/mailchimp.js': {}
+  dependencies:
+    - core/jquery

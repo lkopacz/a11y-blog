@@ -1,0 +1,5 @@
+name: 'a11y with Lindsey Mailchimp Form'
+type: module
+description: 'a11y with Lindsey Blog MailChimp form block'
+core: 8.x
+package: 'a11y with Lindsey'

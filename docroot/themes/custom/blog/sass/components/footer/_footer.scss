@@ -1,18 +1,32 @@
 .page--wrapper {
     footer {
         background: $navy;
-        height: 30rem;
+        height: 40rem;
 
         @include breakpoint($medium) {
-            height: 20rem;
+            height: 30rem;
+        }
+
+        .cog--mq {
+            display: flex;
+            flex-direction: column;
+
+            @include breakpoint($medium) {
+                flex-direction: row;
+            }
         }
 
         ul.menu {
-            justify-content: center;
+            flex-direction: column;
+        }
+
+        ul.menu .menu-item {
+            margin: 0.5rem 0;
         }
 
         ul.menu a,
         ul.menu a.is-active {
+            padding-left: 0;
             color: $off-white;
             border: none;
 
@@ -25,10 +39,10 @@
     .field--name-field-social-media-links {
         display: flex;
         justify-content: flex-start;
-        margin: 2rem;
+        margin-bottom: 2rem;
 
         @include breakpoint($medium) {
-            justify-content: center;
+            justify-content: flex-end;
         }
 
         .field__item {
@@ -56,7 +70,12 @@
 }
 
 footer {
-    .menu--main {
-        padding-top: 4rem;
-    }
+  padding-top: 4rem;  
+}
+
+.page--wrapper .menu--footer ul.menu a {
+    text-transform:  none;
+    font-size: 0.875rem;
+    padding-left: 0;
+    font-weight: normal;
 }

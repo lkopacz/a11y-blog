@@ -15,7 +15,7 @@
             if (input === null) {
                 item.querySelector('label').classList.add('focus');
             }
-            else if (input.getAttribute('type') === 'text' || 'search') {
+            else if (input.getAttribute('type') === 'text' || 'email') {
                 input.addEventListener('focus', function () {
                     input.previousElementSibling.classList.add('focus');
                 }, false);

@@ -35,3 +35,9 @@ search:
     js/modules/search.js: {}
   dependencies:
     - core/drupal
+google_adsense_code:
+  version: 1.x
+  header: true
+  js:
+    '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js': { type: external, attributes: { async: true } }
+    js/google_adsense.js: {}

@@ -1,0 +1,65 @@
+.block-blog-mailchimp-form {
+  h2 {
+    color: $off-white;
+  }
+
+  form {
+    height: 250px;
+    width: 300px;
+  }
+}
+
+.asterisk {
+  color: $vermillion;
+}
+
+.indicates-required {
+  color: $off-white;
+}
+
+.mc-field-group {
+  label {
+    position: relative;
+    color: $off-white;
+  }
+
+  input {
+    border-color: $off-white;
+  }
+}
+
+#mc_embed_signup {
+  div.mce_inline_error {
+    background: transparent !important;
+    padding-left: 0 !important;
+  }
+
+  input.mce_inline_error {
+    border-color: $off-white !important;
+  }
+}
+
+.response {
+  color: $off-white;
+  line-height: 1.25;
+  padding: 0.5rem 0;
+}
+
+.mc-submit.clear {
+  margin-top: 0.75rem;
+}
+
+.page--wrapper {
+  .response a {
+    color: $off-white;
+  }
+
+  .mc-submit input[type="submit"] {
+    font-size: 1rem;
+    padding: 5px;
+  
+    &:hover {
+      padding: 5px;
+    }
+  }
+}

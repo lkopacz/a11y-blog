@@ -6,6 +6,7 @@ base theme: classy
 libraries:
   - blog/fonts
   - blog/global_styles
+  - blog/google_adsense_code
 regions:
   branding: Branding
   header: Header
@@ -14,4 +15,5 @@ regions:
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
   post_content: 'Post content'
-  footer: Footer
+  footer_left: Footer Left
+  footer_right: Footer Right

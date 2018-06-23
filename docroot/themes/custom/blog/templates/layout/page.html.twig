@@ -120,14 +120,13 @@
 
   <!-- ______________________ FOOTER _______________________ -->
 
-  {% if page.footer %}
-    <footer id="footer">
-      <div class="cog--mq">
-        {{ page.footer }}
-      </div>
-    </footer>
+  <footer id="footer">
+    <div class="cog--mq">
+      {{ page.footer_left }}
+      {{ page.footer_right }}
+    </div>
+  </footer>
     <!-- /footer -->
-  {% endif %}
 
 </div>
 <!-- /page -->
