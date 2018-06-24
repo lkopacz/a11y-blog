@@ -5,7 +5,13 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 ] %}
 
 <article {{ attributes.addClass(classes) }}>
-    {{ content.field_image }}
+    {% if content.field_image.0 is not empty %}
+        {{ content.field_image }}
+    {% else %}
+        <div class="field field--name-field-image field--type-image field--label-hidden field__item">
+            <img src="http://via.placeholder.com/275x150" alt="">
+        </div>
+    {% endif %}
     {{ content.field_date }}
     <h2 class="node--type-blog-post__content-title">{{ label }}</h2>
     {{ content.body }}

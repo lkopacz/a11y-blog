@@ -51,6 +51,15 @@ h6 {
   }
 }
 
+pre {
+  background:#636363;
+  color: $peach;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  padding:1rem;
+}
+
 blockquote {
   position: relative;
   margin: 3rem auto;
